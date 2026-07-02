@@ -1,0 +1,6 @@
+{
+  "name": "Scalyze - Performance Marketing Agency",
+  "description": "A high-conversion landing page for Scalyze, a performance marketing agency that drives measurable results with data, creativity, and AI-powered strategies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
