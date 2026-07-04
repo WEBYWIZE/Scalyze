@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import WhyScalyze from "./components/WhyScalyze";
 import CaseStudies from "./components/CaseStudies";
 import Testimonial from "./components/Testimonial";
+import Founder from "./components/Founder";
 import FAQs from "./components/FAQs";
 import FooterCTA from "./components/FooterCTA";
 import Footer from "./components/Footer";
@@ -116,6 +117,17 @@ export default function App() {
           transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
         >
           <Testimonial />
+        </motion.div>
+
+        {/* Meet Our Founder Section */}
+        <motion.div
+          id="founder-section-container"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-120px" }}
+          transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Founder onOpenChat={handleOpenChat} />
         </motion.div>
 
         {/* 7. Frequently Asked Questions interactive Accordion section */}

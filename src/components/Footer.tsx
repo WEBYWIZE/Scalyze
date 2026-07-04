@@ -368,6 +368,13 @@ export default function Footer() {
                           We focus exclusively on the metrics that impact your bank account — revenue, margin, and contribution ROI. Our agile growth team handles all aspects of creative iteration, audience mapping, and continuous A/B testing, freeing you up to focus on product and operations.
                         </p>
                       </section>
+
+                      <section className="space-y-2">
+                        <h4 className="font-bold text-white text-base">Our Founder</h4>
+                        <p>
+                          Scalyze was founded by <strong>Mr. Ritesh Kumar</strong>, a performance marketing expert and growth strategist who believes in absolute performance transparency and scientific marketing scaling.
+                        </p>
+                      </section>
                     </>
                   )}
 
@@ -413,7 +420,9 @@ export default function Footer() {
                           <MapPin className="w-5 h-5 text-amber-400 flex-shrink-0" />
                           <div>
                             <p className="text-xs text-slate-400 font-sans">Corporate Location</p>
-                            <p className="text-sm font-bold text-white">India</p>
+                            <p className="text-sm font-bold text-white">
+                              thakur baba temple gadiya gaon Prem Nagar Thana Nagra Jhansi 284003, India
+                            </p>
                           </div>
                         </div>
                       </section>
