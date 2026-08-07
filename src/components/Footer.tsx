@@ -269,7 +269,7 @@ export default function Footer() {
                       <section className="space-y-2">
                         <h4 className="font-bold text-white text-base">5. Contacting Us</h4>
                         <p>
-                          For any concerns regarding this privacy policy or to request data deletion, please contact our support desk directly via WhatsApp at <span className="text-white font-medium font-mono">+91 89572 10472</span>.
+                          For any concerns regarding this privacy policy or to request data deletion, please contact our support desk directly via WhatsApp at <span className="text-white font-medium font-mono">+91 97957 70763</span>.
                         </p>
                       </section>
                     </>
@@ -308,7 +308,7 @@ export default function Footer() {
                       <section className="space-y-2">
                         <h4 className="font-bold text-white text-base">5. Termination & Queries</h4>
                         <p>
-                          Both parties retain the right to terminate active consulting agreements subject to standard notice periods specified in separate service contracts. For any clarifications, write to us or message our desk at <span className="text-white font-medium font-mono">+91 89572 10472</span>.
+                          Both parties retain the right to terminate active consulting agreements subject to standard notice periods specified in separate service contracts. For any clarifications, write to us or message our desk at <span className="text-white font-medium font-mono">+91 97957 70763</span>.
                         </p>
                       </section>
                     </>
@@ -370,9 +370,9 @@ export default function Footer() {
                       </section>
 
                       <section className="space-y-2">
-                        <h4 className="font-bold text-white text-base">Our Founder</h4>
+                        <h4 className="font-bold text-white text-base">Our Founders & Leadership</h4>
                         <p>
-                          Scalyze was founded by <strong>Mr. Ritesh Kumar</strong>, a performance marketing expert and growth strategist who believes in absolute performance transparency and scientific marketing scaling.
+                          Scalyze was co-founded by <strong>Mr. Ritesh Kumar</strong> (Founder & Head of Growth) and <strong>Mr. Krishna Bhadauriya</strong> (Co-Founder & Growth Director), performance marketing growth architects who believe in absolute transparency, high-impact scaling, and scientific marketing execution.
                         </p>
                       </section>
                     </>
@@ -393,12 +393,12 @@ export default function Footer() {
                           <div>
                             <p className="text-xs text-slate-400 font-sans">Official WhatsApp & Phone</p>
                             <a 
-                              href="https://wa.me/918957210472?text=Hi%20Scalyze,%20I'm%20interested%20in%20your%20performance%20marketing%20services!" 
+                              href="https://wa.me/919795770763?text=Hi%20Scalyze,%20I'm%20interested%20in%20your%20performance%20marketing%20services!" 
                               target="_blank" 
                               rel="noopener noreferrer" 
                               className="text-sm font-bold text-white hover:text-indigo-400 transition-colors font-mono"
                             >
-                              +91 89572 10472
+                              +91 97957 70763
                             </a>
                           </div>
                         </div>

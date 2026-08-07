@@ -86,8 +86,8 @@ export default function Hero({ onOpenChat }: HeroProps) {
             >
               {/* Dynamic Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100/80 dark:border-indigo-900/30 text-xs font-semibold text-indigo-700 dark:text-indigo-300 tracking-wide uppercase">
-                <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-                Performance Marketing Agency
+                <Sparkles className="w-3.5 h-3.5 animate-pulse text-indigo-600 dark:text-indigo-400" />
+                AI Performance Marketing Agency
               </div>
 
               {/* Main Headline */}
@@ -182,7 +182,7 @@ export default function Hero({ onOpenChat }: HeroProps) {
                   src={heroVisual}
                   alt="AI Smart Robot Mascot sitting at laptop"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover rounded-2xl transition-all duration-700 group-hover:scale-[1.04] group-hover:brightness-[1.02] filter contrast-[1.02]"
+                  className="w-full h-full object-cover object-center rounded-2xl transition-all duration-700 group-hover:scale-[1.02] group-hover:brightness-[1.02] filter contrast-[1.02]"
                 />
 
                 {/* Floating Mesh/Glass overlay panels */}

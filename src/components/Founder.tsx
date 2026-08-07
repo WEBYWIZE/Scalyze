@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { Sparkles, MessageSquareCode, TrendingUp, ShieldCheck, Mail, MapPin } from "lucide-react";
+import { Sparkles, MessageSquareCode, TrendingUp, ShieldCheck, Mail, MapPin, Zap, Target, Award, ArrowUpRight } from "lucide-react";
 import founderPhoto from "../assets/images/regenerated_image_1783151928014.png";
+import coFounderPhoto from "../assets/images/regenerated_image_1786079862140.jpg";
 
 interface FounderProps {
   onOpenChat: () => void;
@@ -8,10 +9,10 @@ interface FounderProps {
 
 export default function Founder({ onOpenChat }: FounderProps) {
   return (
-    <section id="founder" className="py-24 bg-slate-50/50 dark:bg-slate-950/20 relative overflow-hidden border-t border-b border-slate-100 dark:border-slate-900/60">
-      {/* Decorative blurry backgrounds */}
-      <div className="absolute top-1/2 -left-36 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-1/3 -right-36 w-96 h-96 bg-violet-500/5 rounded-full blur-3xl pointer-events-none" />
+    <section id="founder" className="py-24 bg-slate-50/60 dark:bg-slate-950/40 relative overflow-hidden border-t border-b border-slate-200/60 dark:border-slate-800/60">
+      {/* Background radial ambient lights */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -22,10 +23,10 @@ export default function Founder({ onOpenChat }: FounderProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100/50 dark:border-indigo-900/40 text-indigo-700 dark:text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4"
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-100 dark:border-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-4 shadow-2xs"
           >
-            <Sparkles className="w-3.5 h-3.5" />
-            Leadership & Vision
+            <Award className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+            Leadership & Strategy
           </motion.div>
           
           <motion.h2
@@ -33,165 +34,252 @@ export default function Founder({ onOpenChat }: FounderProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight"
           >
-            Meet Our Founder
+            Meet Our Leadership
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400 font-sans leading-relaxed"
+            className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 font-sans leading-relaxed"
           >
-            The driving force behind our data-first growth strategies and systematic brand scaling structures.
+            The growth architects steering scientific media buying, revenue engineering, and enterprise brand scaling.
           </motion.p>
         </div>
 
-        {/* Founder Row Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Co-Founders Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 mb-16">
           
-          {/* Left Column: Stylized interactive avatar card (Col span: 5) */}
+          {/* Card 1: Mr. Ritesh Kumar */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-5 flex justify-center"
+            transition={{ duration: 0.6 }}
+            className="relative group flex flex-col"
           >
-            <div className="relative group w-full max-w-sm">
-              {/* Holographic style background glow */}
-              <div className="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-600 rounded-[32px] opacity-25 dark:opacity-40 blur-lg group-hover:opacity-40 dark:group-hover:opacity-60 transition duration-500" />
-              
-              {/* Main Card */}
-              <div className="relative bg-white dark:bg-slate-900/90 border border-slate-100 dark:border-slate-800/80 p-8 rounded-[28px] shadow-2xl flex flex-col items-center text-center overflow-hidden">
-                {/* Upper banner highlight */}
-                <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-indigo-500 to-violet-600" />
+            <div className="relative bg-white dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800/80 p-7 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl dark:hover:border-indigo-500/30 transition-all duration-300 flex flex-col flex-1 overflow-hidden">
+              {/* Subtle top indicator bar */}
+              <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-indigo-500 via-indigo-600 to-violet-600" />
 
-                {/* Founder Image Frame */}
-                <div className="relative w-44 h-44 sm:w-48 sm:h-48 rounded-2xl overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 border border-slate-200/60 dark:border-slate-800/60 shadow-lg flex items-center justify-center mb-6 group-hover:scale-[1.02] transition-transform duration-300">
-                  <img 
-                    src={founderPhoto} 
-                    alt="Mr. Ritesh Kumar" 
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                  {/* Stylized overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 to-transparent z-10" />
-
-                  {/* Absolute Badge for Status */}
-                  <div className="absolute bottom-3 right-3 bg-emerald-500 text-white p-1 rounded-full shadow-md z-20" title="Founder Active">
-                    <ShieldCheck className="w-4 h-4" />
+              {/* Profile Header */}
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6 text-center sm:text-left">
+                <div className="relative flex-shrink-0">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700/80 shadow-md">
+                    <img 
+                      src={founderPhoto} 
+                      alt="Mr. Ritesh Kumar" 
+                      className="w-full h-full object-cover object-[25%_20%] rounded-xl"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 bg-emerald-500 text-white p-1 rounded-full ring-2 ring-white dark:ring-slate-900 shadow-xs" title="Founder Active">
+                    <ShieldCheck className="w-3.5 h-3.5" />
                   </div>
                 </div>
 
-                {/* Founder Info */}
-                <h3 className="font-display text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-                  Mr. Ritesh Kumar
-                </h3>
-                <p className="text-sm font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-violet-400 mt-1 uppercase tracking-wider">
-                  Founder & Head of Growth
-                </p>
-                <p className="text-xs text-slate-400 dark:text-slate-500 font-medium font-sans mt-1">
-                  Performance Marketing Specialist
-                </p>
-
-                {/* Quick Stats Grid */}
-                <div className="grid grid-cols-2 gap-4 w-full mt-6 pt-6 border-t border-slate-100 dark:border-slate-800/80">
-                  <div className="text-center p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-950/40 border border-slate-100/50 dark:border-slate-800/50">
-                    <p className="text-xs text-slate-400 font-sans">Strategic Spend</p>
-                    <p className="text-base font-extrabold text-slate-900 dark:text-white mt-0.5">$3M+</p>
-                  </div>
-                  <div className="text-center p-2.5 rounded-xl bg-slate-50/50 dark:bg-slate-950/40 border border-slate-100/50 dark:border-slate-800/50">
-                    <p className="text-xs text-slate-400 font-sans">ROI Scale</p>
-                    <p className="text-base font-extrabold text-indigo-600 dark:text-indigo-400 mt-0.5">4.8x Avg</p>
-                  </div>
+                <div className="flex-1">
+                  <span className="inline-block px-2.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 text-[11px] font-bold uppercase tracking-wider mb-1.5 border border-indigo-100/80 dark:border-indigo-900/50">
+                    Founder & Head of Growth
+                  </span>
+                  <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Mr. Ritesh Kumar
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium font-sans mt-1">
+                    Performance Marketing Specialist & Growth Architect
+                  </p>
                 </div>
+              </div>
 
-                {/* Direct Connect Action */}
+              {/* Description */}
+              <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed mb-6">
+                Engineered Scalyze to bring scientific media buying, high-cadence creative testing, and server-side tracking telemetry to modern DTC and enterprise brands.
+              </p>
+
+              {/* Metric Highlights */}
+              <div className="grid grid-cols-2 gap-3 mb-6 pt-5 border-t border-slate-100 dark:border-slate-800/80">
+                <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/60">
+                  <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-sans block">Ad Spend Managed</span>
+                  <span className="text-lg font-extrabold text-slate-900 dark:text-white mt-0.5 block">$3M+</span>
+                </div>
+                <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/60">
+                  <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-sans block">Average Scale</span>
+                  <span className="text-lg font-extrabold text-indigo-600 dark:text-indigo-400 mt-0.5 block">4.8x ROAS</span>
+                </div>
+              </div>
+
+              {/* Action Button */}
+              <div className="mt-auto">
                 <button
                   onClick={onOpenChat}
-                  className="w-full mt-6 inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold text-white bg-slate-950 hover:bg-indigo-600 dark:bg-slate-100 dark:text-slate-950 dark:hover:bg-indigo-600 dark:hover:text-white rounded-full transition-all duration-300 shadow-sm active:scale-95 cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-5 text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-500 dark:bg-indigo-600 dark:hover:bg-indigo-500 rounded-xl transition-all shadow-md shadow-indigo-600/10 active:scale-[0.98] cursor-pointer"
                 >
                   <MessageSquareCode className="w-4 h-4" />
-                  Direct Connect with Ritesh
+                  <span>Connect with Mr. Ritesh</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
                 </button>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column: Founder's Story & Mission (Col span: 7) */}
+          {/* Card 2: Mr. Krishna Bhadauriya */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="lg:col-span-7 space-y-8"
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="relative group flex flex-col"
           >
-            {/* Big quote statement */}
-            <div className="relative pl-6 border-l-4 border-indigo-500/80 dark:border-indigo-500/60">
-              <span className="absolute -top-6 -left-3 text-7xl font-serif text-indigo-200/30 dark:text-indigo-500/10 pointer-events-none select-none">
-                “
-              </span>
-              <p className="text-lg sm:text-xl font-display font-medium text-slate-800 dark:text-slate-200 leading-relaxed italic relative z-10">
-                At Scalyze, we don't buy into vanity metrics like impressions or clicks. We only look at what actually impacts your bottom line: margins, conversions, and contribution ROI.
-              </p>
-            </div>
+            <div className="relative bg-white dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800/80 p-7 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl dark:hover:border-violet-500/30 transition-all duration-300 flex flex-col flex-1 overflow-hidden">
+              {/* Subtle top indicator bar */}
+              <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-violet-600 via-indigo-600 to-indigo-500" />
 
-            {/* Explanatory Bio paragraphs */}
-            <div className="space-y-4 text-sm sm:text-base text-slate-600 dark:text-slate-400 font-sans leading-relaxed">
-              <p>
-                As a performance marketing growth architect, <span className="font-semibold text-slate-900 dark:text-white">Mr. Ritesh Kumar</span> engineered Scalyze with a clear purpose: to bring scientific precision and absolute accountability to brand acquisition. 
-              </p>
-              <p>
-                Ritesh leads our team of performance media buyers, automation engineers, and optimization specialists to create self-sustaining growth systems. By utilizing state-of-the-art server-side conversion tracking, advanced Meta partner accounts, and custom WhatsApp automation loops, we ensure that every single advertising rupee or dollar spent generates measurable enterprise value.
-              </p>
-            </div>
-
-            {/* Bullet Highlights representing strategic focus */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="flex items-start gap-3">
-                <div className="p-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex-shrink-0">
-                  <TrendingUp className="w-4 h-4" />
+              {/* Profile Header */}
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6 text-center sm:text-left">
+                <div className="relative flex-shrink-0">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700/80 shadow-md">
+                    <img 
+                      src={coFounderPhoto} 
+                      alt="Mr. Krishna Bhadauriya" 
+                      className="w-full h-full object-cover object-[75%_20%] rounded-xl"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 bg-violet-500 text-white p-1 rounded-full ring-2 ring-white dark:ring-slate-900 shadow-xs" title="Co-Founder Active">
+                    <ShieldCheck className="w-3.5 h-3.5" />
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">Scientific Media Buying</h4>
-                  <p className="text-xs text-slate-400 dark:text-slate-500 font-sans mt-0.5">High-cadence creative testing and granular cohort mapping.</p>
+
+                <div className="flex-1">
+                  <span className="inline-block px-2.5 py-0.5 rounded-md bg-violet-50 dark:bg-violet-950/60 text-violet-700 dark:text-violet-300 text-[11px] font-bold uppercase tracking-wider mb-1.5 border border-violet-100/80 dark:border-violet-900/50">
+                    Co-Founder & Growth Director
+                  </span>
+                  <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Mr. Krishna Bhadauriya
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium font-sans mt-1">
+                    Performance & Business Scaling Director
+                  </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="p-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex-shrink-0">
+              {/* Description */}
+              <p className="text-sm text-slate-600 dark:text-slate-300 font-sans leading-relaxed mb-6">
+                Spearheads market penetration, client retention architecture, and high-impact revenue partnerships for multi-million dollar brand expansion trajectories.
+              </p>
+
+              {/* Metric Highlights */}
+              <div className="grid grid-cols-2 gap-3 mb-6 pt-5 border-t border-slate-100 dark:border-slate-800/80">
+                <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/60">
+                  <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-sans block">Brands Scaled</span>
+                  <span className="text-lg font-extrabold text-slate-900 dark:text-white mt-0.5 block">100+</span>
+                </div>
+                <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/60">
+                  <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-sans block">Funnel Growth</span>
+                  <span className="text-lg font-extrabold text-violet-600 dark:text-violet-400 mt-0.5 block">3.5x Avg</span>
+                </div>
+              </div>
+
+              {/* Action Button */}
+              <div className="mt-auto">
+                <button
+                  onClick={onOpenChat}
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-5 text-xs font-bold text-white bg-violet-600 hover:bg-violet-500 dark:bg-violet-600 dark:hover:bg-violet-500 rounded-xl transition-all shadow-md shadow-violet-600/10 active:scale-[0.98] cursor-pointer"
+                >
                   <MessageSquareCode className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">WhatsApp & API Automation</h4>
-                  <p className="text-xs text-slate-400 dark:text-slate-500 font-sans mt-0.5">Automating client retention and recovery to spike repeat buyers.</p>
-                </div>
+                  <span>Connect with Mr. Krishna</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
+                </button>
               </div>
             </div>
-
-            {/* Address & Corporate details inline */}
-            <div className="pt-6 border-t border-slate-100 dark:border-slate-800/80 flex flex-col sm:flex-row sm:items-center gap-6">
-              <div className="flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400 font-sans">
-                <MapPin className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                <span>
-                  <strong>Location:</strong> thakur baba temple gadiya gaon Prem Nagar Thana Nagra Jhansi 284003
-                </span>
-              </div>
-              <div className="flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400 font-sans">
-                <Mail className="w-4 h-4 text-indigo-500 flex-shrink-0" />
-                <span>
-                  <strong>Email:</strong> hello@scalyze.in
-                </span>
-              </div>
-            </div>
-
           </motion.div>
 
         </div>
+
+        {/* Corporate Headquarters & Mission Block */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-7 sm:p-10 shadow-lg relative overflow-hidden"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            
+            {/* Mission Statement */}
+            <div className="lg:col-span-7 space-y-5">
+              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50 px-3 py-1 rounded-md border border-indigo-100 dark:border-indigo-900/50">
+                <Target className="w-3.5 h-3.5" /> Founders' Core Directive
+              </div>
+
+              <blockquote className="text-base sm:text-lg font-display font-medium text-slate-800 dark:text-slate-200 leading-relaxed italic border-l-2 border-indigo-500 pl-4">
+                “At Scalyze, we reject vanity metrics like impressions or clicks. We focus strictly on contribution margins, acquisition profitability, and enterprise ROI.”
+              </blockquote>
+
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-sans leading-relaxed">
+                Led by <strong className="text-slate-900 dark:text-white">Mr. Ritesh Kumar</strong> and <strong className="text-slate-900 dark:text-white">Mr. Krishna Bhadauriya</strong>, Scalyze combines server-side conversion telemetry, Meta agency infrastructure, and automated retention loops to generate predictable, compounding enterprise revenue.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div className="flex items-center gap-2.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
+                  <div className="p-1 rounded bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">
+                    <TrendingUp className="w-3.5 h-3.5" />
+                  </div>
+                  <span>Scientific Media Buying</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
+                  <div className="p-1 rounded bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400">
+                    <MessageSquareCode className="w-3.5 h-3.5" />
+                  </div>
+                  <span>Automated Retention Loops</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Corporate Desk Info */}
+            <div className="lg:col-span-5 bg-slate-50 dark:bg-slate-950/80 p-6 rounded-xl border border-slate-200/60 dark:border-slate-800/80 space-y-4">
+              <h4 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-amber-500" /> Corporate Headquarters
+              </h4>
+              
+              <div className="space-y-3 text-xs text-slate-600 dark:text-slate-400 font-sans">
+                <div className="flex items-start gap-2">
+                  <span className="font-semibold text-slate-700 dark:text-slate-300 min-w-16">Address:</span>
+                  <span className="leading-snug">thakur baba temple gadiya gaon Prem Nagar Thana Nagra Jhansi 284003, UP, India</span>
+                </div>
+                
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-slate-700 dark:text-slate-300 min-w-16">Email:</span>
+                  <a href="mailto:hello@scalyze.in" className="text-indigo-600 dark:text-indigo-400 hover:underline">hello@scalyze.in</a>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-slate-700 dark:text-slate-300 min-w-16">Hotline:</span>
+                  <a href="https://wa.me/919795770763" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-slate-900 dark:text-white hover:text-indigo-500">
+                    +91 97957 70763
+                  </a>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <button
+                  onClick={onOpenChat}
+                  className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white text-white font-bold text-xs rounded-xl shadow transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Zap className="w-3.5 h-3.5 text-amber-500" />
+                  <span>Book Strategic Growth Consultation</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </motion.div>
 
       </div>
     </section>
   );
 }
+
+
