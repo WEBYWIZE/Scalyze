@@ -257,8 +257,8 @@ export default function Founder({ onOpenChat }: FounderProps) {
 
                 <div className="flex items-center gap-2">
                   <span className="font-semibold text-slate-700 dark:text-slate-300 min-w-16">Hotline:</span>
-                  <a href="https://wa.me/919795770763" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-slate-900 dark:text-white hover:text-indigo-500">
-                    +91 97957 70763
+                  <a href="https://wa.me/919519210472" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-slate-900 dark:text-white hover:text-indigo-500">
+                    +91 95192 10472
                   </a>
                 </div>
               </div>

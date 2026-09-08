@@ -364,7 +364,7 @@ export default function ChatModal({ isOpen, onClose }: ChatModalProps) {
                       </p>
                     </div>
                     <button
-                      onClick={() => window.open("https://wa.me/919795770763?text=Hi%20Scalyze,%20I'm%20interested%20in%20your%20performance%20marketing%20services!", "_blank")}
+                      onClick={() => window.open("https://wa.me/919519210472?text=Hi%20Scalyze,%20I'm%20interested%20in%20your%20performance%20marketing%20services!", "_blank")}
                       className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition-all shadow-xs text-[10px] uppercase tracking-wider cursor-pointer flex items-center gap-1"
                     >
                       WhatsApp Us

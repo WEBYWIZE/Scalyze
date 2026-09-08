@@ -38,7 +38,7 @@ export default function App() {
   }, [theme]);
 
   const handleOpenChat = () => {
-    window.open("https://wa.me/919795770763?text=Hi%20Scalyze,%20I'm%20interested%20in%20your%20performance%20marketing%20services!", "_blank");
+    window.open("https://wa.me/919519210472?text=Hi%20Scalyze,%20I'm%20interested%20in%20your%20performance%20marketing%20services!", "_blank");
   };
 
   const handleCloseChat = () => {
